@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page|Home</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding: 12px;
+        margin: 5px;
+        width: 100%;
+      }
+      .container {
+        padding: 14px 33px;
+        width: 361px;
+        margin: 28px auto;
+        background-color: #f2f2f2;
+        border: 2px solid rgb(177, 156, 156);
+        border-radius: 6px;
+        font-variant: small-caps;
+       
+      }
+      h1{
+          text-align: center;
+          font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-weight: 1000;
+         text-shadow: 2px 1px 2px #b34086;
+         text-decoration: underline;
+          
+      }
+      input[type="text"],
+      input[type="Email"],
+      input[type="password"] {
+        cursor: pointer;
+        
+        border: none;
+        width: 91%;
+        padding: 10px;
+        margin: 10px 10px;
+        border-radius: 8px;
+        border: #ccc;
+        border-bottom: 1px solid rgba(150, 2, 155, 0.459);
+      }
+      button{
+          border:none;
+          background-color: blue;
+          color:white;
+          padding:10px 17px 10px 17px;
+          width:100%;
+          font-variant: small-caps;
+          cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login Page</h1>
+    <div class="container">
+      <form action="user.php">
+        <p>
+          <label for="Name">Name</label>
+          <input type="text" name="text" placeholder="Naresh" required />
+        </p>
+        <p>
+          <label for="Email">Email</label>
+         * <input 
+            type="Email"
+            name="email"
+            placeholder="naresh@gmail.com"
+            required
+          />
+        </p>
+        <p>
+          <label for="password">Password</label>
+          *<input
+            type="password"
+            name="Password"
+            placeholder="123456"
+            required
+          />
+        </p>
+        <label for="password">Conform Password</label>*
+        <input type="password" name="password" placeholder="123456" />
+        <p>
+          <button>submit</button>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
